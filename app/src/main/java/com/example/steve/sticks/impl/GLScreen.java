@@ -1,7 +1,7 @@
 package com.example.steve.sticks.impl;
 
-import com.badlogic.androidgames.framework.Game;
-import com.badlogic.androidgames.framework.Screen;
+import com.example.steve.sticks.Game;
+import com.example.steve.sticks.Screen;
 
 public abstract class GLScreen extends Screen {
     protected final GLGraphics glGraphics;

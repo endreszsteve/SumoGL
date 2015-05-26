@@ -6,7 +6,7 @@ import android.content.Context;
 import android.os.Build.VERSION;
 import android.view.View;
 
-import com.badlogic.androidgames.framework.Input;
+import com.example.steve.sticks.Input;
 
 public class AndroidInput implements Input {    
     AccelerometerHandler accelHandler;

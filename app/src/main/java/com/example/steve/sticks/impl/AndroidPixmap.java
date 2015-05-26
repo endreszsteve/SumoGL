@@ -2,8 +2,8 @@ package com.example.steve.sticks.impl;
 
 import android.graphics.Bitmap;
 
-import com.badlogic.androidgames.framework.Graphics.PixmapFormat;
-import com.badlogic.androidgames.framework.Pixmap;
+import com.example.steve.sticks.Graphics.PixmapFormat;
+import com.example.steve.sticks.Pixmap;
 
 public class AndroidPixmap implements Pixmap {
     Bitmap bitmap;

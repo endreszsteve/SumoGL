@@ -1,6 +1,6 @@
 package com.example.steve.sticks;
 
-import com.badlogic.androidgames.framework.Graphics.PixmapFormat;
+import com.example.steve.sticks.Graphics.PixmapFormat;
 
 public interface Pixmap {
     public int getWidth();

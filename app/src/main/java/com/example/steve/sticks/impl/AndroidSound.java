@@ -2,7 +2,8 @@ package com.example.steve.sticks.impl;
 
 import android.media.SoundPool;
 
-import com.badlogic.androidgames.framework.Sound;
+
+import com.example.steve.sticks.Sound;
 
 public class AndroidSound implements Sound {
     int soundId;

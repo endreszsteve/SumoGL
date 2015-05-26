@@ -4,8 +4,8 @@ import javax.microedition.khronos.opengles.GL10;
 
 import android.util.FloatMath;
 
-import com.badlogic.androidgames.framework.impl.GLGraphics;
-import com.badlogic.androidgames.framework.math.Vector2;
+import com.example.steve.sticks.impl.GLGraphics;
+import com.example.steve.sticks.math.Vector2;
 
 public class SpriteBatcher {        
     final float[] verticesBuffer;

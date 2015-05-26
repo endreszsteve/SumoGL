@@ -1,6 +1,6 @@
 package com.example.steve.sticks;
 
-import com.badlogic.androidgames.framework.math.Vector2;
+import com.example.steve.sticks.math.Vector2;
 
 public class DynamicGameObject extends GameObject {
     public final Vector2 velocity;

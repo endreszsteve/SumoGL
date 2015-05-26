@@ -13,12 +13,13 @@ import android.os.PowerManager.WakeLock;
 import android.view.Window;
 import android.view.WindowManager;
 
-import com.badlogic.androidgames.framework.Audio;
-import com.badlogic.androidgames.framework.FileIO;
-import com.badlogic.androidgames.framework.Game;
-import com.badlogic.androidgames.framework.Graphics;
-import com.badlogic.androidgames.framework.Input;
-import com.badlogic.androidgames.framework.Screen;
+
+import com.example.steve.sticks.Audio;
+import com.example.steve.sticks.FileIO;
+import com.example.steve.sticks.Game;
+import com.example.steve.sticks.Graphics;
+import com.example.steve.sticks.Input;
+import com.example.steve.sticks.Screen;
 
 public abstract class GLGame extends Activity implements Game, Renderer {
     enum GLGameState {

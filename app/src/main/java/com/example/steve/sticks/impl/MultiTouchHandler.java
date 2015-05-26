@@ -7,9 +7,9 @@ import android.annotation.TargetApi;
 import android.view.MotionEvent;
 import android.view.View;
 
-import com.badlogic.androidgames.framework.Input.TouchEvent;
-import com.badlogic.androidgames.framework.Pool;
-import com.badlogic.androidgames.framework.Pool.PoolObjectFactory;
+import com.example.steve.sticks.Input.TouchEvent;
+import com.example.steve.sticks.Pool;
+import com.example.steve.sticks.Pool.PoolObjectFactory;
 
 @TargetApi(5)
 public class MultiTouchHandler implements TouchHandler {

@@ -6,9 +6,9 @@ import java.util.List;
 import android.view.View;
 import android.view.View.OnKeyListener;
 
-import com.badlogic.androidgames.framework.Input.KeyEvent;
-import com.badlogic.androidgames.framework.Pool;
-import com.badlogic.androidgames.framework.Pool.PoolObjectFactory;
+import com.example.steve.sticks.Input.KeyEvent;
+import com.example.steve.sticks.Pool;
+import com.example.steve.sticks.Pool.PoolObjectFactory;
 
 public class KeyboardHandler implements OnKeyListener {
     boolean[] pressedKeys = new boolean[128];

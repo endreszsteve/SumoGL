@@ -8,9 +8,10 @@ import android.content.res.AssetManager;
 import android.media.AudioManager;
 import android.media.SoundPool;
 
-import com.badlogic.androidgames.framework.Audio;
-import com.badlogic.androidgames.framework.Music;
-import com.badlogic.androidgames.framework.Sound;
+import com.example.steve.sticks.Audio;
+import com.example.steve.sticks.Music;
+import com.example.steve.sticks.Sound;
+
 
 public class AndroidAudio implements Audio {
     AssetManager assets;

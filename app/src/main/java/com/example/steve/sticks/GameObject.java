@@ -1,7 +1,8 @@
 package com.example.steve.sticks;
 
-import com.badlogic.androidgames.framework.math.Rectangle;
-import com.badlogic.androidgames.framework.math.Vector2;
+import com.example.steve.sticks.math.Rectangle;
+import com.example.steve.sticks.math.Vector2;
+
 
 public class GameObject {
     public final Vector2 position;

@@ -9,9 +9,9 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.opengl.GLUtils;
 
-import com.badlogic.androidgames.framework.FileIO;
-import com.badlogic.androidgames.framework.impl.GLGame;
-import com.badlogic.androidgames.framework.impl.GLGraphics;
+import com.example.steve.sticks.FileIO;
+import com.example.steve.sticks.impl.GLGame;
+import com.example.steve.sticks.impl.GLGraphics;
 
 public class Texture {
     GLGraphics glGraphics;

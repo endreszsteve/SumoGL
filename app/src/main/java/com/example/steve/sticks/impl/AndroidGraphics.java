@@ -13,8 +13,9 @@ import android.graphics.Paint;
 import android.graphics.Paint.Style;
 import android.graphics.Rect;
 
-import com.badlogic.androidgames.framework.Graphics;
-import com.badlogic.androidgames.framework.Pixmap;
+import com.example.steve.sticks.Graphics;
+import com.example.steve.sticks.Pixmap;
+
 
 public class AndroidGraphics implements Graphics {
     AssetManager assets;

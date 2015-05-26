@@ -7,7 +7,7 @@ import java.nio.ShortBuffer;
 
 import javax.microedition.khronos.opengles.GL10;
 
-import com.badlogic.androidgames.framework.impl.GLGraphics;
+import com.example.steve.sticks.impl.GLGraphics;
 
 public class Vertices {
     final GLGraphics glGraphics;
