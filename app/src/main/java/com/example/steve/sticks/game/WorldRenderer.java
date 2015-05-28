@@ -57,6 +57,38 @@ public class WorldRenderer
 
     private void renderPlayer()
     {
+        TextureRegion keyFrame;
+        switch(world.player.state)
+        {
+            case Player.PLAYER_LEFT:
+                keyFrame = Assets.playerPushLeft.getKeyFrame(world.player.stateTime, Animation.ANIMATION_LOOPING);
+                break;
+            case Player.PLAYER_RIGHT:
+                keyFrame = Assets.playerPushRight.getKeyFrame(world.player.stateTime, Animation.ANIMATION_LOOPING);
+                break;
+            case Player.PLAYER_PUSH:
+                keyFrame = Assets.player;
+                break;
+            case Player.PLAYER_IDLE:
+                default:
+                    keyFrame = Assets.player;
+        }
+    }
 
+    private void renderOpponent()
+    {
+        TextureRegion keyFrame;
+        switch(world.opponent.state)
+        {
+            case Opponent.OPPONENT_STATE_IDLE:
+            default:
+                keyFrame = Assets.opponent;
+        }
+    }
+
+    private void renderRing()
+    {
+        Ring ring = world.ring;
+        batcher.drawSprite(ring.position.x, ring.position.y, 2, 2, Assets.arena);
     }
 }
