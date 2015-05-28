@@ -31,9 +31,9 @@ public class World
 
     public World(WorldListener listener)
     {
-        this.ring = new Ring(WORLD_WIDTH * 0.5f - (Ring.RING_WIDTH - Ring.RING_WIDTH * 0.5f), WORLD_HEIGHT * 0.5f - (Ring.RING_HEIGHT - Ring.RING_HEIGHT * 0.5f));
-        this.opponent = new Opponent(5, 10);
-        this.player = new Player(5, 5);
+        this.ring = new Ring(5, 7);
+        this.opponent = new Opponent(5, 7);
+        this.player = new Player(3, 5);
         this.listener = listener;
 
         this.score = 0;
@@ -60,7 +60,7 @@ public class World
     {
         if (opponent.position.x - player.position.x <= 0 || opponent.position.y - player.position.y <= 0)
         {
-            opponent.position.set(player.position);
+            //opponent.position.set(player.position);
             opponent.update(deltaTime);
         }
     }

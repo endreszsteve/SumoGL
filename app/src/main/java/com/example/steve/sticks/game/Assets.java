@@ -60,9 +60,9 @@ public class Assets
         players = new Texture(game, "player.png");
         mainMenu = new TextureRegion(items, 0, 195, 192, 101);
         pauseMenu = new TextureRegion(items, 0, 300, 160, 66);
-        ready = new TextureRegion(items, 0, 375, 225, 75);
-        gameOver = new TextureRegion(items, 0, 0, 0, 0); // need to update this!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-        highScoreRegion = new TextureRegion(Assets.items, 0, 257, 300, 110 /3);
+        ready = new TextureRegion(items, 18, 375, 191, 72);
+        gameOver = new TextureRegion(items, 6, 452, 196, 39);
+        highScoreRegion = new TextureRegion(Assets.items, 0, 230, 191, 32);
         logo = new TextureRegion(items, 254, 0, 256, 126);
         soundOn = new TextureRegion(items, 0, 0, 64, 64);
         soundOff = new TextureRegion(items, 64, 0, 64, 64);
@@ -100,7 +100,7 @@ public class Assets
 
         font = new Font(items, 0,0, 0, 0, 0); ///// need to update this as well!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-        music = game.getAudio().newMusic("cartoonBattle.mp3");
+        music = game.getAudio().newMusic("cartoonBattle.ogg");
         music.setLooping(true);
         music.setVolume(0.5f);
         if(Settings.soundenabled)

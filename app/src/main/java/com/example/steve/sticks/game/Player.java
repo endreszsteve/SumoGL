@@ -24,7 +24,7 @@ public class Player extends DynamicGameObject
 
     public void update(float deltaTime)
     {
-        velocity.set(PLAYER_VELOCITY, 0);
+        velocity.set(0, 0);
         position.add(velocity.x * deltaTime, velocity.y * deltaTime);
         bounds.lowerLeft.set(position).sub(bounds.width / 2, bounds.height / 2);
     }

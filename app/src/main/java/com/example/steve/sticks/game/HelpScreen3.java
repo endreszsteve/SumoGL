@@ -37,7 +37,7 @@ public class HelpScreen3 extends GLScreen
     @Override
     public void resume()
     {
-        helpImage = new Texture(glGame, "help1.png");
+        helpImage = new Texture(glGame, "help3.png");
         helpRegion = new TextureRegion(helpImage, 0, 0, 320, 480);
     }
 

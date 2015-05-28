@@ -48,15 +48,19 @@ public class WorldRenderer
         gl.glBlendFunc(GL10.GL_SRC_ALPHA, GL10.GL_ONE_MINUS_SRC_ALPHA);
 
         batcher.beginBatch(Assets.items);
+        renderRing();
+        batcher.endBatch();
+        batcher.beginBatch(Assets.players);
         renderPlayer();
         renderOpponent();
-        renderRing();
         batcher.endBatch();
         gl.glDisable(GL10.GL_BLEND);
     }
 
     private void renderPlayer()
     {
+        Player player = world.player;
+        batcher.drawSprite(player.position.x, player.position.y, 5, 5, Assets.player);
         TextureRegion keyFrame;
         switch(world.player.state)
         {
@@ -77,6 +81,8 @@ public class WorldRenderer
 
     private void renderOpponent()
     {
+        Opponent opponent = world.opponent;
+        batcher.drawSprite(opponent.position.x, opponent.position.y, 5, 5, Assets.opponent);
         TextureRegion keyFrame;
         switch(world.opponent.state)
         {
@@ -89,6 +95,6 @@ public class WorldRenderer
     private void renderRing()
     {
         Ring ring = world.ring;
-        batcher.drawSprite(ring.position.x, ring.position.y, 2, 2, Assets.arena);
+        batcher.drawSprite(ring.position.x, ring.position.y, 10, 10, Assets.arena);
     }
 }
