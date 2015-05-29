@@ -8,7 +8,7 @@ public class Player extends DynamicGameObject
     public static final int PLAYER_LEFT = 1;
     public static final int PLAYER_RIGHT = 2;
     public static final int PLAYER_PUSH = 3;
-    public static final float PLAYER_VELOCITY = 3.0f;
+    public static final float PLAYER_VELOCITY = 1f;
     public static final float PLAYER_WIDTH = 64f;
     public static final float PLAYER_HEIGHT = 64f;
 
@@ -24,7 +24,6 @@ public class Player extends DynamicGameObject
 
     public void update(float deltaTime)
     {
-        velocity.set(0, 0);
         position.add(velocity.x * deltaTime, velocity.y * deltaTime);
         bounds.lowerLeft.set(position).sub(bounds.width / 2, bounds.height / 2);
     }

@@ -27,8 +27,6 @@ public class WorldRenderer
 
     public void render()
     {
-        if(world.player.position.y > cam.position.y)
-            cam.position.y = world.player.position.y;
         cam.setViewportAndMatrices();
         renderBackground();
         renderObjects();
@@ -60,7 +58,7 @@ public class WorldRenderer
     private void renderPlayer()
     {
         Player player = world.player;
-        batcher.drawSprite(player.position.x, player.position.y, 5, 5, Assets.player);
+        batcher.drawSprite(player.position.x, player.position.y, 1f, 1f, Assets.player);
         TextureRegion keyFrame;
         switch(world.player.state)
         {
@@ -82,7 +80,7 @@ public class WorldRenderer
     private void renderOpponent()
     {
         Opponent opponent = world.opponent;
-        batcher.drawSprite(opponent.position.x, opponent.position.y, 5, 5, Assets.opponent);
+        batcher.drawSprite(opponent.position.x, opponent.position.y, 1f, 1f, Assets.opponent);
         TextureRegion keyFrame;
         switch(world.opponent.state)
         {

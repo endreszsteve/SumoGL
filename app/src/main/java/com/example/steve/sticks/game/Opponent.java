@@ -6,7 +6,7 @@ public class Opponent extends DynamicGameObject
 {
     public static final float OPPONENT_WIDTH = 64;
     public static final float OPPONENT_HEIGHT = 64;
-    public static final float OPPONENT_VELOCITY = 3f;
+    public static final float OPPONENT_VELOCITY = 0.1f;
     public static final int OPPONENT_STATE_IDLE = 0;
     public static final int OPPONENT_STATE_LEFT_PUSH = 1;
     public static final int OPPONENT_STATE_RIGHT_PUSH = 2;
@@ -20,7 +20,7 @@ public class Opponent extends DynamicGameObject
         super(x, y, OPPONENT_WIDTH, OPPONENT_HEIGHT);
         state = OPPONENT_STATE_IDLE;
         stateTime = 0;
-        velocity.set(OPPONENT_VELOCITY, 0);
+        velocity.set(OPPONENT_VELOCITY, OPPONENT_VELOCITY);
 
     }
 
