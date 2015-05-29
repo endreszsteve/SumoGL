@@ -31,9 +31,9 @@ public class World
     public final Ring ring;
     public final Opponent opponent;
     public final WorldListener listener;
-    public final Circle arena;
     public int score;
     public int state;
+    public Vector2 center = new Vector2(5f,7.5f);
 
     public World(WorldListener listener)
     {
@@ -41,7 +41,7 @@ public class World
         this.opponent = new Opponent(5, 9);
         this.player = new Player(5, 5);
         this.listener = listener;
-        this.arena = new Circle(5,5,2.5f);
+
 
         this.score = 0;
         this.state = WORLD_STATE_RUNNING;
@@ -73,23 +73,25 @@ public class World
         dirX /= hyp;
         dirY /= hyp;
 
-        if(opponent.position.dist(player.position) >= 1f)
+        if(opponent.position.dist(player.position) >= 0.5f)
         {
             opponent.position.y += dirY * Opponent.OPPONENT_VELOCITY;
             opponent.position.x += dirX * Opponent.OPPONENT_VELOCITY;
         }
+        opponent.update(deltaTime);
 
 
     }
 
     private void checkBounds()
     {
-        if(player.position.x > arena.radius || player.position.y > arena.radius)
+        if(center.dist(player.position.x, player.position.y) > 4.5)
         {
-            Log.d("1", "outside??");
-        }else
+            state = WORLD_STATE_GAME_OVER;
+        }
+        if(center.distSquared(opponent.position) <= 5)
         {
-            Log.d("2", "inside??");
+            Log.d("opp", "out");
         }
 
     }

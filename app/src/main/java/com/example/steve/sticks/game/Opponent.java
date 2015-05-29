@@ -26,14 +26,8 @@ public class Opponent extends DynamicGameObject
 
     public void update(float deltaTime)
     {
-        position.add(velocity.x * deltaTime, velocity.y * deltaTime);
         bounds.lowerLeft.set(position).sub(OPPONENT_WIDTH / 2, OPPONENT_HEIGHT / 2);
 
-        if (position.x < OPPONENT_WIDTH / 2)
-        {
-            position.x = OPPONENT_WIDTH / 2;
-            velocity.x = OPPONENT_VELOCITY;
-        }
         stateTime += deltaTime;
     }
 }

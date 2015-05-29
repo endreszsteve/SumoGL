@@ -1,6 +1,7 @@
 package com.example.steve.sticks.game;
 
 import com.example.steve.sticks.DynamicGameObject;
+import com.example.steve.sticks.math.Vector2;
 
 public class Player extends DynamicGameObject
 {
